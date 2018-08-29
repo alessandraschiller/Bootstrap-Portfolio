@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <title>Contact</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
-    <body>
-                    <header id="masthead">
-                        <div class="container">
-                        <a href="index.html" id="logo">Alessandra Schiller</a>
-                        <nav>
-                            <a href="index.html">About</a>
-                            <a href="portfolio.html">Portfolio</a>
-                            <a href="contact.html">Contact</a>
-                        </nav>
-                        </div>    
-                    </header>
-            
-            <div id="main-container" class="container">
-                    <section class="main-container">
-                        <h1>Contact</h1>
-                        <form id="contact-form">
-                            <ul>
-                                <li>
-                                    <label for="name">Name</label>
-                                    <input type="text" name="name" id="name" placeholder="John Smith" required="required">
-                                </li>
-                                <li>
-                                        <label for="email">Email</label>
-                                        <input type="text" name="email" id="email" placeholder="example@gmail.com" required="requried">
-                                 </li>
-                                 <li>
-                                        <label for="message">Message</label>
-                                        <textarea id="message" name="message" id="email" required="requried"></textarea>
-                                 </li>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap-Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-                            </ul>
-                            <input type="submit" name="submit">
-                        </form>
+<body>
 
-                        </section>
-                        
-                    <section class="sidebar">
-                        <div id="connect">
-                            <h2>Connect with Me</h2>
-                            <img src="assets/images/giticon.png" class="social" alt="GitHub">
-                            <img src="assets/images/linkedinicon.png" class="social" alt="LinkenIn">
-                            <img src="assets/images/soficon.png" class="social" alt="StackOverFlow">
-                        </div>
-                    </section>
+   <header id="mastead" class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                   <div class="bg-info">
+                    <a href="index.html" id="logo" class="h1 d-block bg-info text-white text-center text-md-left">Alessandra Schiller</a>
+                </div>
+                </div>
+
+                <div class="col-md-5">
+                    <ul class="nav navbar p-md-0 mt-md-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="index.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
-            <footer>
-                    <div class="container">
-                        &copy; Copyright 2018 Alessandra Schiller
-                    </div>
-             </footer>
+        </div>
+    </header>
 
-    </body>
+    <div id="main-container" class="container">
+        <div class="row">   
+        <div class="col-lg-8">
+        <section class="main-container" style="background-color: #fff; padding-right: 10px; padding-bottom: 10px; padding-left: 10px;  margin-bottom: 10px;">
+            <h1>Contact</h1>
+            <form id="contact-form" class="form">
+                <ul class="list-unstyled">
+                    <li class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="text" name="email" id="email" placeholder="example@gmail.com" required="requried">
+                    </li>
+                    <li class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" id="email" required="requried"></textarea>
+                    </li>
+
+                </ul>
+                <input type="submit" name="submit" class="btn btn-info">
+            </form>
+
+        </section>
+    </div>
+</div>
+    </div>
+
+    <footer class="bg-dark text-white border-top border-info py-3 mt-4 fixed-bottom">
+        <div class="container">
+            <small class="d-block text-center">&copy; Copyright 2018 Alessandra Schiller</small>
+        </div>
+    </footer>
+
+</body>
 
 </html>
