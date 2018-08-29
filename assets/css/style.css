@@ -1,21 +1,20 @@
-* {
+ {
     box-sizing: border-box;
 }
 
 body {
     background: url('../images/bananas.png');
-    font-size: 18px;
-    line-height: 34px;
+    
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     color: #777;
 }
 
-.container {
+/*.container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     clear: both;
-}
+}*/
 
 h1, h2, h3, p {
     margin-bottom: 20px;
@@ -35,33 +34,49 @@ h1 {
     font-size: 30px;
     line-height: 49px;
     border-bottom: 3px solid #ddd;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 h2, h3 {
     font-size: 22px;
 }
 
-/* header */
+.h1 {
+  margin-bottom: 0;
+}
 
-#masthead {
-    background: #fff;
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #FDF5C8 !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+
+
+
+/*#masthead {
+    background: #fff !important;
     margin: 0 0 30px;
     z-index: 99;
     color: #fff;
     overflow: auto;
-    border-bottom: 2px solid #ccc;
     position: fixed;
     width: 100%;
-}
+  }*/
+
 
 #logo {
-    width: 250px;
+    /*width: 250px;*/
     height: 90px;
     background: #4aaaa5;
-    float: left;
+    /*float: left;*/
     font-family: 'Geogria', Times, Times New Roman, serif;
-    text-align: center;
+    /*text-align: center;*/
     line-height: 90px;
     color: #fff;
     font-weight: 700;
@@ -69,28 +84,41 @@ h2, h3 {
     text-decoration: none;
 }
 
-nav {
+/*nav {
     float: right;
     margin-top: 25px;
-}
-
+}*/
+/*
 nav a{
-    color: #999;
+    color: white;
     text-decoration: none;
     margin-left: 15px;
     display: inline-block;
-    border-left: 1px solid #efefef;
     padding-left: 15px;
     line-height: 18px;
-}
+}*/
 
 nav a:first-child {
     border-left: 0 none;
 }
 
-/* main  */ 
+.nav-link {
+  margin-top: 25px;
+  padding: 0;
+}
+
+.navbar {
+  margin-bottom: -8px;
+}
+
+.navbar-default {
+  background-color: #4aaaa5;
+}
+
+
 #main-container {
-    padding-top: 130px;
+
+    padding-top: 50px;
 }
 
 .main-container {
@@ -98,8 +126,8 @@ nav a:first-child {
     padding: 30px;
     margin: 0 0 40px 0;
     width: 100%;
-    max-width: 650px;
-    float: left;
+    /*max-width: 650px;*/
+   /* float: left;*/
     border: 1px solid #ddd;
 }
 
@@ -111,36 +139,8 @@ nav a:first-child {
     margin-right: 25px;
 }
 
-/* sidebar */
-.sidebar {
-    background: #fff;
-    padding: 30px;
-    width: 100%;
-    max-width: 270px;
-    float: right;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-}
 
-h3, .sidebar, h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-}
 
- .social {
-     width: 62px;
-     height: 62px;
-     margin-top: 8px;
-     margin-right: 5px;
- }
-
- .social:last-child {
-     margin-right: 0;
- }
-
-  /* footer */
 
   footer {
    background: #666;
@@ -153,10 +153,10 @@ h3, .sidebar, h2 {
    text-align: center;
   }
 
-  /* portfolio */
+
   .work {
       width: 274px;
-      overflow: auto;
+      /*overflow: auto;*/
       position: relative;
       float: left;
       margin: 20px 0 25px;
@@ -186,7 +186,7 @@ h3, .sidebar, h2 {
       font-weight: 300; 
  }
 
- /* contact */
+
 
  #contact-form ul {
      margin-bottom: 20px;
